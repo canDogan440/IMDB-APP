@@ -1,0 +1,59 @@
+<div class="card-container">
+  <div class="card-info">
+    <a routerLink="/details" >
+      <i class="bi bi-info-square"></i>
+      <p>INFORMATION</p>
+    </a>
+  </div>
+  <div class="card full-cast">
+    <a routerLink="/fullcast" [queryParams]="{ id: trailer.imDbId }">
+      <i class="bi bi-people-fill"></i>
+      <p>FULL CAST</p>
+    </a>
+  </div>
+  <div class="card posters">
+    <a routerLink="/posters" [queryParams]="{ id: trailer.imDbId }">
+      <i class="bi bi-file-earmark-richtext"></i>
+      <P>POSTERS</P>
+    </a>
+  </div>
+  <div class="card images">
+    <a routerLink="/images" [queryParams]="{ id: trailer.imDbId }">
+      <i class="bi bi-images"></i>
+      <p>IMAGES</p>
+    </a>
+  </div>
+  <div class="card trailer">
+    <a routerLink="/trailer"[queryParams]="{ id: trailer.imDbId }">
+      <i class="bi bi-film"></i>
+      <p>TRAILER</p>
+    </a>
+  </div>
+  <div class="card trailer">
+    <a>
+      <i class="bi bi-flag"></i>
+      <p>REPORT</p>
+    </a>
+  </div>
+</div>
+<div class="trailer-container">
+  <div class="wrapper">
+    <div class="video-conteiner">
+      <video width="100%" height="100%" controls>
+        <source [src]="trailer.linkEmbed" type="video/embed" />
+        <source [src]="trailer.linkEmbed" type="video/embed" />
+      </video>
+    </div>
+    <div class="content-container">
+      <div class="title-holder">
+        <h3>{{ trailer.fullTitle }}</h3>
+      </div>
+      <div class="content-holder">
+        <p>{{ trailer.videoDescription }}</p>
+        <br />
+        <p>{{ trailer.uploadDate }}</p>
+      </div>
+    </div>
+  </div>
+
+ 

@@ -1,0 +1,61 @@
+
+<div class="card-container">
+    <div class="card-info">
+      <a routerLink="/details" [queryParams]="{ id: cast.imDbId }">
+        <i class="bi bi-info-square"></i>
+        <p>INFORMATION</p>
+      </a>
+    </div>
+    <div class="card full-cast">
+      <a routerLink='/fullcast' [queryParams]="{ id: cast.imDbId }">
+        <i class="bi bi-people-fill"></i>
+        <p>FULL CAST</p>
+      </a>
+    </div>
+    <div class="card posters">
+      <a routerLink="/posters" [queryParams]="{ id: cast.imDbId }">
+        <i class="bi bi-file-earmark-richtext"></i>
+        <P>POSTERS</P>
+      </a>
+    </div>
+    <div class="card images">
+      <a routerLink="/images" [queryParams]="{ id: cast.imDbId }">
+        <i class="bi bi-images"></i>
+        <p>IMAGES</p>
+      </a>
+    </div>
+    <div class="card trailer">
+      <a routerLink="/trailer" [queryParams]="{ id: cast.imDbId }">
+        <i class="bi bi-film"></i>
+        <p>TRAILER</p>
+      </a>
+    </div>
+    <div class="card trailer">
+      <a>
+        <i class="bi bi-flag"></i>
+        <p>REPORT</p>
+      </a>
+    </div>
+  </div>
+  
+  
+    <div class="plot-container">
+      <div class="plot-bar">Actors</div>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Actor Name</th>
+          <th scope="col">As Character</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of cast.actors; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ data.name }}</td>
+          <td>{{ data.asCharacter }}</td>
+        </tr>
+      </tbody>
+    </table>
+  

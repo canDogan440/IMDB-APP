@@ -1,0 +1,70 @@
+<div class="card-container">
+  <div class="card-info">
+    <a routerLink="/details" [queryParams]="{ id: images.imDbId }">
+      <i class="bi bi-info-square"></i>
+      <p>INFORMATION</p>
+    </a>
+  </div>
+  <div class="card-m full-cast">
+    <a routerLink="/fullcast" [queryParams]="{ id: images.imDbId }">
+      <i class="bi bi-people-fill"></i>
+      <p>FULL CAST</p>
+    </a>
+  </div>
+  <div class="card-m posters">
+    <a routerLink="/posters" [queryParams]="{ id: images.imDbId }">
+      <i class="bi bi-file-earmark-richtext"></i>
+      <P>POSTERS</P>
+    </a>
+  </div>
+  <div class="card-m images">
+    <a routerLink="/images" [queryParams]="{ id: images.imDbId }">
+      <i class="bi bi-images"></i>
+      <p>IMAGES</p>
+    </a>
+  </div>
+  <div class="card-m trailer">
+    <a routerLink="/trailer" [queryParams]="{ id: images.imDbId }">
+      <i class="bi bi-film"></i>
+      <p>TRAILER</p>
+    </a>
+  </div>
+  <div class="card-m trailer">
+    <a>
+      <i class="bi bi-flag"></i>
+      <p>REPORT</p>
+    </a>
+  </div>
+</div>
+<!-- <div class="wrapper">
+  <div class="row mb-5">
+    <div class="column">
+      <div class="row">
+        <div class="picture-card" *ngFor="let data of images.items; index as i">
+          <img [src]="images.items[i].image" alt="" />
+        </div>
+        <div *ngFor="let data of images.items; index as i">
+          <p>{{ images.items[i].title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="wrapper">
+  <div class="row mb-5">
+    <div
+      class="card"
+      style="width: 18rem"
+      *ngFor="let data of images.items; index as i"
+    >
+      <img
+        class="card-img-top"
+        [src]="images.items[i].image"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <p class="card-text">{{ images.items[i].title }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+  
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: rgb(212, 212, 212);
+  }
+  .img-holder {
+    margin-right: 50px;
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+  }
+  .plot-container {
+    display: flex;
+    flex-direction: column;
+  
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .plot-bar {
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+  
+    height: 70px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    background-color: black;
+  }
+  
+  .card-container {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  
+  .card i {
+    font-size: 40px;
+    color: white;
+  }
+  .card p {
+    color: white;
+  }
+  .card-info p,
+  i {
+    color: white;
+  }
+  .card-info i {
+    font-size: 40px;
+  }
+  .card-info {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    text-align: center;
+  
+    width: 350px;
+    height: 150px;
+  
+    background-color: rgb(240, 140, 190);
+  }
+  .card-info button {
+    background-color: rgb(240, 140, 190);
+    border: none;
+    height: 100%;
+  }
+  .card-info:hover{
+    background-color: rgb(185, 93, 139);
+  }
+  
+  .card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+    height: 150px;
+    width: 150px;
+    background-color: rgb(50, 205, 166);
+  }
+  .card:hover{
+    background-color: rgb(40, 156, 127);
+  
+  }
+  .card button {
+    background-color: rgb(50, 205, 166);
+    border: none;
+    height: 100%;
+  }
+  .report:hover{
+    background-color: rgb(235, 86, 86) !important;
+  }
+  .table {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .plot-container {
+    display: flex;
+    flex-direction: column;
+  
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .plot-bar {
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+  
+    height: 70px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    background-color: black;
+  }

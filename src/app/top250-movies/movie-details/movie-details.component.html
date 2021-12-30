@@ -1,0 +1,58 @@
+<div class="card-container">
+  <div class="card-info">
+    <a routerLink="/details" [queryParams]="{ id: content.imDbId }">
+      <i class="bi bi-info-square"></i>
+      <p>INFORMATION</p>
+    </a>
+  </div>
+  <div class="card full-cast">
+    <a routerLink="/fullcast" [queryParams]="{ id: content.imDbId }">
+      <i class="bi bi-people-fill"></i>
+      <p>FULL CAST</p>
+    </a>
+  </div>
+  <div class="card posters">
+    <a routerLink="/posters" [queryParams]="{ id: content.imDbId }">
+      <i class="bi bi-file-earmark-richtext"></i>
+      <P>POSTERS</P>
+    </a>
+  </div>
+  <div class="card images">
+    <a routerLink="/images" [queryParams]="{ id: content.imDbId }">
+      <i class="bi bi-images"></i>
+      <p>IMAGES</p>
+    </a>
+  </div>
+  <div class="card trailer">
+    <a routerLink="/trailer" [queryParams]="{ id: content.imDbId }">
+      <i class="bi bi-film"></i>
+      <p>TRAILER</p>
+    </a>
+  </div>
+  <div class="card trailer">
+    <a>
+      <i class="bi bi-flag"></i>
+      <p>REPORT</p>
+    </a>
+  </div>
+</div>
+
+<div>
+  <div class="container">
+    <div class="content">
+      <h2> {{content.fullTitle}} </h2>
+      <hr />
+      <p>
+        Type: {{content.type}} <br />
+        Relase Date: {{content.year}} <br />
+        Original Language: {{content.language}} <br />
+        IMDB ID: {{content.imDbId}}
+      </p>
+    </div>
+  </div>
+
+  <div class="plot-container">
+    <div class="plot-bar">Short Plot</div>
+    <p> {{content.plotShort.plainText}} </p>
+  </div>
+</div>

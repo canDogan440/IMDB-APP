@@ -1,0 +1,128 @@
+.card-container {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.card i {
+  font-size: 40px;
+  color: white;
+}
+.card p {
+  color: white;
+}
+.card-info p,
+i {
+  color: white;
+}
+.card-info i {
+  font-size: 40px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: center;
+
+  width: 350px;
+  height: 150px;
+
+  background-color: rgb(240, 140, 190);
+}
+
+.card-info:hover {
+  background-color: rgb(185, 93, 139);
+}
+
+.card {
+  margin-bottom: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  height: 150px;
+  width: 150px;
+  background-color: rgb(50, 205, 166);
+}
+.card:hover {
+  background-color: rgb(40, 156, 127);
+}
+
+.report:hover {
+  background-color: rgb(235, 86, 86) !important;
+}
+.trailer-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 16px;
+  margin-bottom: 60px;
+}
+.wrapper {
+  width: 75%;
+  height: 600px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  background-color: rgb(126, 118, 118);
+  overflow: hidden;
+}
+.video-conteiner {
+  height: 100%;
+  width: 70%;
+  border: 1px solid;
+}
+.content-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.title-holder {
+  
+  justify-content: flex-start;
+  padding: 5px;
+  height: 20%;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+.content-holder{
+  padding: 5px;
+  
+
+}
+.card-container-test {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+
+  max-width: 496px;
+  margin: 0 auto;
+  padding: 9px;
+  background-color: rgb(95, 95, 255);
+  }
+  
+  .card-test {
+  width: 100px;
+  height: 140px;
+  margin: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 12px rgb(63, 63, 63);
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    margin: 0 0 1rem 0;
+  }
+  
+  .grid  div {
+    height: 100px;
+    background: red;
+    min-width: 10px;
+  }
+  
+  body {
+    margin: 1rem;
+  }

@@ -1,0 +1,161 @@
+*{
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: rgb(212, 212, 212);
+}
+.img-holder {
+  margin-right: 50px;
+  width: 500px;
+  height: 300px;
+  border: 1px solid;
+}
+.plot-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.plot-bar {
+  display: flex;
+  border: 1px solid;
+  justify-content: center;
+  align-items: center;
+
+  height: 70px;
+  width: 100%;
+  color: white;
+  font-size: 24px;
+  background-color: black;
+}
+
+.card-container {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  gap: 10px;
+  
+}
+
+.card i {
+  font-size: 40px;
+  color: white;
+}
+.card p {
+  color: white;
+}
+.card-info p,
+i {
+  color: white;
+}
+.card-info i {
+  font-size: 40px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: center;
+
+  width: 350px;
+  height: 150px;
+
+  background-color: rgb(240, 140, 190);
+}
+.card-info button {
+  background-color: rgb(240, 140, 190);
+  border: none;
+  height: 100%;
+}
+.card-info:hover {
+  background-color: rgb(185, 93, 139);
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  height: 150px;
+  width: 150px;
+  background-color: rgb(50, 205, 166);
+  margin-bottom: 50px;
+}
+.card:hover {
+  background-color: rgb(40, 156, 127);
+}
+.card button {
+  background-color: rgb(50, 205, 166);
+  border: none;
+  height: 100%;
+}
+.report:hover {
+  background-color: rgb(235, 86, 86) !important;
+}
+.wrapper{
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+
+}
+.row {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15 px;
+  margin-left: -15 px;
+}
+.mb-5 {
+  margin-bottom: 3 rem !important;
+}
+.column {
+  /* float: left;
+  width: 25%;
+  padding: 0 10px; */
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.picture-card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1; */
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  text-align: center !important;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  margin: 0 0 1rem 0;
+}
+
+.grid > div {
+  height: 100px;
+  background: red;
+  min-width: 10px;
+}
+
+body {
+  margin: 1rem;
+}

@@ -1,0 +1,127 @@
+.card-container {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.card-m i {
+  font-size: 40px;
+  color: white;
+}
+.card-m p {
+  color: white;
+}
+.card-info p,
+i {
+  color: white;
+}
+.card-info i {
+  font-size: 40px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: center;
+
+  width: 350px;
+  height: 150px;
+
+  background-color: rgb(240, 140, 190);
+}
+.card-info button {
+  background-color: rgb(240, 140, 190);
+  border: none;
+  height: 100%;
+}
+.card-info:hover {
+  background-color: rgb(185, 93, 139);
+}
+
+.card-m {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  height: 150px;
+  width: 150px;
+  background-color: rgb(50, 205, 166);
+}
+.card-m:hover {
+  background-color: rgb(40, 156, 127);
+}
+
+.report:hover {
+  background-color: rgb(235, 86, 86) !important;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 75%;
+
+  display: flex;
+  justify-content: center;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.mb-5 {
+  margin-bottom: 3 rem !important;
+}
+.column {
+  /* float: left;
+    width: 25%;
+    padding: 0 10px; */
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.picture-card {
+  margin: 10px;
+  background-color: rgb(180, 179, 179);
+  padding: 10px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1; */
+  flex: 0 0 20%;
+  max-width: 20%;
+  height: 250px;
+  
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  margin: 0 0 1rem 0;
+}
+
+
+.card {
+  margin: 10px;
+}
+
+.card-body{
+  display: flex;
+  justify-content: end;
+}
